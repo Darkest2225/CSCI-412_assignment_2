@@ -47,6 +47,12 @@ class MainActivity : ComponentActivity() {
                         }) {
                             Text("Start Activity Implicitly")
                         }
+                        Button(onClick = {
+                            val intent = Intent(context, ThirdActivity::class.java)
+                            startActivity(intent)
+                        }) {
+                            Text("View Image Activity")
+                        }
                     }
 
                 }
