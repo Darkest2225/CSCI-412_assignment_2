@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <permission android:name="com.example.greetingscard.MSE412"
+        android:protectionLevel="dangerous" />
+    <uses-permission android:name="com.example.greetingscard.MSE412"/>
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-feature android:name="android.hardware.camera" android:required="false" />
     <application
@@ -21,7 +24,8 @@
             android:name=".SecondActivity"
             android:exported="true"
             android:label="@string/title_activity_second"
-            android:theme="@style/Theme.GreetingsCard">
+            android:theme="@style/Theme.GreetingsCard"
+            android:permission="com.example.greetingscard.MSE412">
             <intent-filter>
                 <action android:name="android.intent.action.SECOND" />
 
